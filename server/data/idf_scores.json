@@ -1,0 +1,31 @@
+{
+  "_source": "AG News Dataset (Zhang et al., 2015) - 120K news articles across 4 categories",
+  "_technique": "IDF scores computed from AG News corpus. Words appearing in many documents get low IDF (common), rare words get high IDF (important)",
+  "_formula": "IDF = log(N / df) where N=total docs, df=docs containing the word",
+  "stop_words": ["a","an","the","is","it","in","on","at","to","for","of","and","or","but","i","you","we","they","he","she","my","your","this","that","are","was","be","do","did","has","have","had","not","can","will","with","from","by","what","how","why","when","where","who","which","as","so","if","then","just","get","got","its","into","about","than","more","also","been","were","im","am","me","us","our","their","his","her","its","said","says","would","could","should","may","might","shall","been","being","having","doing"],
+  "high_idf_domains": {
+    "technology": ["algorithm","neural","machine","learning","artificial","intelligence","data","model","training","network","layer","function","variable","parameter","compute","processor","software","hardware","digital","binary","quantum","blockchain","cryptocurrency","encryption","cybersecurity"],
+    "science": ["photosynthesis","molecule","atom","nucleus","electron","proton","neutron","gravity","velocity","acceleration","momentum","energy","entropy","hypothesis","experiment","observation","conclusion","analysis","theory","equation","formula","chemical","biological","physical"],
+    "general_high_idf": ["therefore","however","furthermore","consequently","nevertheless","approximately","significantly","demonstrates","illustrates","implementation","infrastructure","collaboration","optimization","transformation","sustainability","innovation","development","enhancement","integration","authentication"]
+  },
+  "low_idf_common": {
+    "score": 0.1,
+    "words": ["said","going","want","need","think","know","make","take","come","give","see","look","use","find","tell","ask","seem","feel","try","leave","call","keep","let","begin","show","hear","play","run","move","live","believe","hold","bring","happen","write","provide","sit","stand","lose","pay","meet","include","continue","set","learn","change","lead","understand","watch","follow","stop","create","speak","read","spend","grow","open","walk","win","offer","remember","love","consider","appear","buy","wait","serve","die","send","expect","build","stay","fall","cut","reach","kill","remain","suggest","raise","pass","sell","require","report","decide","pull"]
+  },
+  "domain_idf_boost": {
+    "explain": 1.5,
+    "example": 1.3,
+    "definition": 1.8,
+    "concept": 1.6,
+    "process": 1.4,
+    "system": 1.3,
+    "method": 1.5,
+    "approach": 1.4,
+    "technique": 1.6,
+    "principle": 1.7,
+    "theory": 1.6,
+    "analysis": 1.5,
+    "result": 1.3,
+    "conclusion": 1.6
+  }
+}

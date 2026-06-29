@@ -1,0 +1,40 @@
+{
+  "_source": "GoEmotions Dataset (Demszky et al., 2020) - simplified lexicon extracted from top patterns",
+  "_note": "Words extracted from GoEmotions labeled training data, grouped by emotion",
+  "joy": {
+    "words": ["happy","happiness","love","wonderful","amazing","fantastic","great","excited","joy","delighted","glad","pleased","thrilled","ecstatic","cheerful","blessed","grateful","thankful","awesome","brilliant","excellent","superb","perfect","best","yay","hooray","celebrate","enjoying","fun","laugh","smile","elated"],
+    "weight": 0.9
+  },
+  "sadness": {
+    "words": ["sad","unhappy","depressed","miserable","crying","tears","lonely","hopeless","heartbroken","disappointed","grief","sorrow","hurt","pain","lost","empty","devastated","down","gloomy","melancholy","broken","miss","regret","unfortunate","suffering","ache","mourn"],
+    "weight": -0.8
+  },
+  "anger": {
+    "words": ["angry","mad","furious","rage","hate","frustrated","annoyed","irritated","upset","outraged","disgusted","infuriated","livid","boiling","bitter","hostile","aggressive","enraged","resentful","offended","provoked","fed up","cant stand"],
+    "weight": -0.7
+  },
+  "fear": {
+    "words": ["scared","afraid","fear","worried","nervous","anxious","terrified","panic","dread","horror","frightened","uneasy","tense","phobia","threat","danger","unsafe","paranoid","insecure","vulnerable","dreading","trembling","shaking"],
+    "weight": -0.6
+  },
+  "surprise": {
+    "words": ["wow","whoa","shocked","unexpected","surprising","unbelievable","incredible","astonished","amazed","stunned","speechless","mind-blown","cant believe","didnt expect","suddenly","out of nowhere","extraordinary","remarkable"],
+    "weight": 0.3
+  },
+  "disgust": {
+    "words": ["disgusting","gross","awful","terrible","horrible","nasty","revolting","repulsive","vile","foul","sick","yuck","eww","appalling","offensive","despicable","abhorrent","loathe","detest","nauseating"],
+    "weight": -0.5
+  },
+  "trust": {
+    "words": ["trust","believe","confident","sure","certain","reliable","safe","secure","honest","genuine","faithful","loyal","dependable","credible","authentic","sincere","committed","dedicated","responsible"],
+    "weight": 0.6
+  },
+  "anticipation": {
+    "words": ["waiting","hoping","expecting","looking forward","soon","planning","ready","prepare","anticipate","excited about","cant wait","upcoming","future","wonder","curious","eager","keen","enthusiastic","optimistic"],
+    "weight": 0.5
+  },
+  "neutral": {
+    "words": ["okay","fine","alright","ok","whatever","sure","yes","no","maybe","perhaps","possibly","think","know","need","want","going","doing","making","taking","getting"],
+    "weight": 0.0
+  }
+}

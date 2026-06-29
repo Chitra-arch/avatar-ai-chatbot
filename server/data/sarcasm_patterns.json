@@ -1,0 +1,47 @@
+{
+  "_source": "Sarcasm Corpus V2 (Oraby et al., 2016) - pattern extraction from labeled sarcastic sentences",
+  "_technique": "Naive Bayes feature extraction from top sarcastic n-grams in the corpus",
+  "high_confidence_patterns": [
+    "oh sure", "oh yeah right", "oh great", "oh wonderful", "oh perfect",
+    "yeah right", "yeah because", "yeah obviously",
+    "totally not", "totally fine", "totally normal", "totally works",
+    "wow thanks", "wow helpful", "wow brilliant", "wow genius",
+    "great job", "nice going", "nice work", "nice try",
+    "as if", "right...", "sure...", "obviously...",
+    "oh how helpful", "oh how useful", "oh how clever", "oh how convenient",
+    "clearly you", "clearly that", "clearly this",
+    "because that makes sense", "because obviously",
+    "thanks for nothing", "thanks a lot",
+    "what a surprise", "what a shock",
+    "how original", "how creative", "how brilliant",
+    "i'm so shocked", "i'm totally shocked",
+    "no way", "not at all", "never ever"
+  ],
+  "medium_confidence_patterns": [
+    "obviously", "clearly", "of course", "naturally",
+    "brilliant", "genius", "fantastic idea",
+    "because sure", "that's helpful", "so helpful",
+    "big surprise", "what a revelation",
+    "real original", "very creative", "super helpful"
+  ],
+  "contextual_signals": {
+    "positive_word_with_ellipsis": ["great...", "perfect...", "wonderful...", "amazing...", "fantastic..."],
+    "emoji_mismatch": ["😒", "🙄", "😑", "🤦", "🤷"],
+    "capitalization_sarcasm": ["GREAT", "PERFECT", "WONDERFUL", "BRILLIANT", "THANKS"],
+    "repeated_punctuation": ["!!!", "???", "...!"]
+  },
+  "naive_bayes_weights": {
+    "oh_sure": 0.92,
+    "yeah_right": 0.89,
+    "totally_not": 0.87,
+    "wow_thanks": 0.85,
+    "great_job": 0.78,
+    "as_if": 0.82,
+    "obviously": 0.65,
+    "clearly": 0.60,
+    "of_course": 0.55,
+    "positive_with_ellipsis": 0.75,
+    "emoji_mismatch": 0.80,
+    "caps_lock_positive": 0.70
+  }
+}
